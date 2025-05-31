@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$white-color: #fff;
+
+body {
+    background-color: #001a29 !important;
+    color: $white-color !important;
+    font-family: 'Inter', 'Poppins-serif', 'Open Sans', sans-serif;
+}
+
+.dropShadow {
+    filter: drop-shadow(0 0 1rem #00ffee);
+}
+
+.navbar {
+
+    .navbar-brand {
+        color: $white-color;
+    }
+
+    .nav-link {
+        color: $white-color;
+    }
+}
