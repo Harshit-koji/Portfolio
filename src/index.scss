@@ -1,10 +1,11 @@
+@import "var.scss";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$white-color: #fff;
+
 
 body {
     background-color: #001a29 !important;
@@ -16,13 +17,28 @@ body {
     filter: drop-shadow(0 0 1rem #00ffee);
 }
 
+.bg-skillIcon{
+    color: $bg-skillIcon;
+}
 .navbar {
-
+    
     .navbar-brand {
         color: $white-color;
     }
 
     .nav-link {
         color: $white-color;
+        font-size: 1rem;
+        transition: color 0.3s ease;
     }
+
+    .nav-item .active {
+        color: $nav-hover-color !important;
+    }
+
+    .theme-icon {
+        color: $white-color;
+        font-size: 1.5rem;
+    }
+
 }

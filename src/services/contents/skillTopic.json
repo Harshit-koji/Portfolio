@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Languages",
+    "description": "Languages that I have picked up over the years",
+    "icon": "code"
+  },
+  {
+    "id": "2",
+    "title": "Libraries & Frameworks",
+    "description": "Libraries and Frameworks that I prefer to work with",
+    "icon": "braces"
+  },
+  {
+    "id": "3",
+    "title": "Tools",
+    "description": "Tools that I know and use on a daily basis",
+    "icon": "wrench"
+  }
+]

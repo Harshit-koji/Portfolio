@@ -1,0 +1,28 @@
+@import '../var.scss';
+//? Navbar Section Start
+.navbar {
+    background-color: $theme-color;
+    font-weight: 500;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.1);
+
+    // background: rgba(255, 255, 255, 0.2);
+    // backdrop-filter: blur(10px);
+    // -webkit-backdrop-filter: blur(10px);
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    // border-bottom-left-radius: 1rem;
+    // border-bottom-right-radius: 1rem;
+}
+
+.nav-item .nav-link:hover {
+    color: $nav-hover-color !important;
+    // filter: drop-shadow(6px 6px 10px red) !important;
+    text-shadow:  0 0 20px white !important;
+}
+
+.navbar .theme-icon {
+    cursor: pointer;
+}
+
+
+//! Navbar Section End

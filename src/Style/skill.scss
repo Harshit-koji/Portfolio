@@ -1,0 +1,36 @@
+@import "../var.scss";
+
+.bi-arrow-up-right{
+    display: inline-block;
+cursor: pointer;
+    border-radius: 50%;
+transition: transform .3s ease-in-out, color .2s ease-in;
+
+    &:hover{
+transform: rotate(45deg);
+color: $bg-skillIcon;
+
+    }
+}
+.bg-skill{
+   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+   
+}
+// background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+
+// .btn::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 50px;
+//     height: 50px;
+//     border-radius: 50%;
+//     background-image: url(../images/arrow-white.svg), var(--gradient-blue-vertical);
+//     background-repeat: no-repeat, no-repeat;
+//     background-position: center center, center center;
+//     background-size: 24px auto, cover;
+//     transform: translate(50px, 0px);
+//     transition: all 0.4s ease-in-out;
+// }
