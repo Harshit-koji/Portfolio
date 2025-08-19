@@ -1,12 +1,39 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+MainInfo.jsx component created
+UI Comp main folder inside it - Hero.jsx, Skill.jsx
+services folder created
+Style folder created - header.scss
+var.scss is created in main structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+2 June 
+ 
+Skill.jsx and skill.scss created
+working on skill section
+importing "../../Style/skill.scss" 
+nav completed
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+28 Jun
+
+New folder create services/contents
+files are: skillTopic.json and TopicData.json
+
+
+<!-- 
+1. Tabs links, if we are in skill then in navbar skill should be in active mode
+
+2. Typing effect in Hero, like I'm a Frontend Developer / UI/UX Designer
+
+3. Logo like present in https://darshanbhuva.vercel.app/
+
+4. Links attaching to the buttons
+
+5. In projects, like and comment buttons in working condition
+
+6. Back to top button
+
+7. Form validation
+
+8. Form - in input the text color should be white ✅
+ -->

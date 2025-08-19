@@ -1,6 +1,27 @@
 
 $theme-color: #001a29;
+$main-blue : #139bfd;
+$nav-active : #139bfd;
 $white-color: #fff;
-$nav-hover-color: #87ceeb;
+$pink-color: #f897ce;
+//! all theme color
+$green-color: #98eb87;
+$active-color: #139bfd;
+
+//! For all button opacity  A 
+// $lowActive-color :#98eb87bf ;
+$lowActive-color :#139bfd ;
+
+
 $bg-skillIcon: #6e57e0;
 $bg-skillHover : linear-gradient(90deg, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+
+//! project card backgroud color 
+$light-transparent : #21223f;
+
+//! pink gradiant to text in project section
+
+$pink-gradient : linear-gradient(to right, #bfdbfe , #e9d5ff , #fbcfe8);
+//! Text Glow
+
+$dark-mode : linear-gradient(180deg, rgba(19, 155, 253, 0.7) 15%, rgba(0, 0, 0, 1) 100%);

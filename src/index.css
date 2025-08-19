@@ -9,4 +9,7 @@ body{
     background-color: #001a29 !important;
     color: white !important;
 }
-
+html, body {
+  height: auto;
+  overflow-x: hidden;
+}

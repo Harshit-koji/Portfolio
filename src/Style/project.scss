@@ -1,0 +1,83 @@
+@import "../var.scss";
+
+
+.projectCardBg{
+    background-color: $light-transparent !important;
+    color: $white-color !important;
+    border-radius: 1.5rem !important;
+    padding: 1rem;
+    // max-width: 150%;
+}
+
+
+
+.card-title{
+  background:  $pink-gradient ; 
+
+  background-clip: text !important;
+  color: transparent  !important;   
+}
+
+
+.projectLinkIcon{
+
+  position: absolute;
+  left: -12px;
+//  transition: all .5s ease;
+bottom: 8px;
+  transform:  rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+.projectAnchor{
+
+  // transition: all 5s linear;
+
+        .activeGlow{
+      display: inline-block;
+      transition: all .3s linear;
+      }
+
+    .slide-in{
+         animation: slideRight  .6s ease forwards;
+     transform:  rotate(20deg);
+  opacity: 1;
+  filter: drop-shadow( 0 0 7px $active-color);
+    }
+    .slide-out {
+  animation: slideBackward 0.6s ease forwards;
+}
+ &:hover{
+   .activeGlow{
+  text-shadow: 0 0 7px $active-color;
+  transform: scale(1.04); // Slight zoom-in
+    transform: translateY(-10% ); 
+}
+ }
+}
+
+
+@keyframes slideRight  {
+  0%{
+    // left: -12px;
+  }
+  50%{
+    bottom: -12px;
+  }
+
+  100%{
+     left: 6rem;
+  }
+}
+@keyframes slideBackward {
+ 0%{
+    left: 6rem;
+  }
+  50%{
+    bottom: -12px;
+  }
+
+  100%{
+     left: -12px;
+  }
+}

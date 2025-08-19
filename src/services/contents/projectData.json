@@ -1,0 +1,74 @@
+[
+  {
+    "id": "p1",
+    "title": "Aritmatika Solver",
+    "description": "Program ini dirancang untuk mempermudah pengguna dalam menyelesaikan soal-soal matematika secara otomatis.",
+    "image": "hero.png",
+    "liveDemo": "https://example.com/aritmatika-solver",
+    "details": "https://example.com/aritmatika-solver/details"
+  },
+  {
+    "id": "p2",
+    "title": "AutoChat-Discord",
+    "description": "AutoChat adalah solusi otomatisasi untuk mengirim pesan ke saluran Discord secara terjadwal.",
+     "image": "hero.png",
+    "liveDemo": "https://example.com/autochat-discord",
+    "details": "https://example.com/autochat-discord/details"
+  },
+  {
+    "id": "p3",
+    "title": "Buku Catatan",
+    "description": "Buku Catatan adalah website yang memungkinkan pengguna untuk membuat, menyimpan, dan mengelola catatan digital.",
+     "image": "hero.png",
+    "liveDemo": "https://example.com/buku-catatan",
+    "details": "https://example.com/buku-catatan/details"
+  },
+  {
+    "id": "p4",
+    "title": "Todo List App",
+    "description": "Aplikasi sederhana untuk membuat daftar tugas harian dengan status selesai dan belum.",
+     "image": "hero.png",
+    "liveDemo": "https://example.com/todo-list",
+    "details": "https://example.com/todo-list/details"
+  },
+  {
+    "id": "p5",
+    "title": "Weather Dashboard",
+    "description": "Menampilkan data cuaca real-time dari API terbuka berdasarkan lokasi pengguna.",
+     "image": "hero.png",
+    "liveDemo": "https://example.com/weather-dashboard",
+    "details": "https://example.com/weather-dashboard/details"
+  },
+  {
+    "id": "p6",
+    "title": "Expense Tracker",
+    "description": "Melacak pendapatan dan pengeluaran secara visual menggunakan grafik dan tabel.",
+    "image": "hero.png",
+    "liveDemo": "https://example.com/expense-tracker",
+    "details": "https://example.com/expense-tracker/details"
+  },
+  {
+    "id": "p7",
+    "title": "Recipe Finder",
+    "description": "Cari dan lihat resep masakan berdasarkan bahan menggunakan API eksternal.",
+    "image": "hero.png",
+    "liveDemo": "https://example.com/recipe-finder",
+    "details": "https://example.com/recipe-finder/details"
+  },
+  {
+    "id": "p8",
+    "title": "Portfolio Website",
+    "description": "Website portofolio pribadi untuk menampilkan proyek, keterampilan, dan kontak.",
+     "image": "hero.png",
+    "liveDemo": "https://example.com/portfolio",
+    "details": "https://example.com/portfolio/details"
+  },
+  {
+    "id": "p9",
+    "title": "Quiz App",
+    "description": "Aplikasi kuis interaktif dengan skor dan hasil akhir.",
+     "image": "hero.png",
+    "liveDemo": "https://example.com/quiz-app",
+    "details": "https://example.com/quiz-app/details"
+  }
+]

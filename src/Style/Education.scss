@@ -1,0 +1,37 @@
+@import "../var.scss";
+
+
+
+.dot{
+position: absolute;
+z-index: 1;
+&::after{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: $active-color;
+   border-radius:  50px;
+   
+}
+}
+.line{
+position: absolute;
+// z-index: 0;
+&::after{
+    content: "";
+    position: absolute;
+    width: .1rem;
+    height: 50rem;
+    background-color: $active-color;
+   border-radius:  50px;
+transform: translate(7px, 4px);
+
+}
+}
+
+
+
+.fixedWidth{
+max-width: 50%;
+}

@@ -1,0 +1,75 @@
+@import "../var.scss";
+
+.contact-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 26, 41, 1) 15%, rgba(0, 0, 0, 1) 100%);
+    backdrop-filter: blur(8px);
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.skillCardBg {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-control {
+    border: none !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+#contact-btn {
+    background: linear-gradient(90deg, rgba(0, 26, 41, 0.5) 50%, rgba(0, 0, 0, 0.7) 100%);
+    border: none;
+}
+
+.form-control:focus {
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+:is(input,
+    textarea)::placeholder {
+    color: gainsboro !important;
+}
+
+.social-icons a div {
+    font-size: 1.4rem;
+}
+
+.copyright-div {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+}
+
+
+.copyright-text {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.contact-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: $dark-mode;
+    // background: $pink-gradient;
+    backdrop-filter: blur(10px);
+}
+
+form input, textarea {
+    color: white !important;
+}

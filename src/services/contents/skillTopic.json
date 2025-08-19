@@ -3,18 +3,84 @@
     "id": "1",
     "title": "Languages",
     "description": "Languages that I have picked up over the years",
-    "icon": "code"
+    "icon": "code",
+    "items": [
+      {
+        "id": "img1-001",
+        "label": "C++",
+        "icon": "code-slash"
+      },
+      {
+        "id": "img1-002",
+        "label": "JavaScript",
+        "icon": "filetype-js"
+      },
+      {
+        "id": "img1-003",
+        "label": "SQL",
+        "icon": "database"
+      }
+    ]
   },
   {
     "id": "2",
     "title": "Libraries & Frameworks",
     "description": "Libraries and Frameworks that I prefer to work with",
-    "icon": "braces"
+    "icon": "braces",
+    "items": [
+      {
+        "id": "img2-001",
+        "label": "React",
+        "icon": "SiReact" 
+      },
+      {
+        "id": "img2-002",
+        "label": "Tailwind CSS",
+        "icon": "SiTailwindcss"
+      },
+      {
+        "id": "img2-003",
+        "label": "Node.js",
+        "icon": "SiNodedotjs"
+      },
+      {
+        "id": "img2-004",
+        "label": "MongoDB",
+        "icon": "SiMongodb"
+      }
+    ]
   },
   {
     "id": "3",
     "title": "Tools",
     "description": "Tools that I know and use on a daily basis",
-    "icon": "wrench"
+    "icon": "wrench",
+    "items": [
+      {
+        "id": "img3-001",
+        "label": "Git",
+        "icon": "SiGit"
+      },
+      {
+        "id": "img3-002",
+        "label": "GitHub",
+        "icon": "SiGithub"
+      },
+      {
+        "id": "img3-003",
+        "label": "Vercel",
+        "icon": "SiVercel"
+      },
+      {
+        "id": "img3-004",
+        "label": "Figma",
+        "icon": "SiFigma"
+      },
+      {
+        "id": "img3-005",
+        "label": "PostMan",
+        "icon": "SiPostman"
+      }
+    ]
   }
 ]
