@@ -60,6 +60,9 @@ body {
 
 .CommonBtn {
   position: relative;
+  // display: block;
+  // width: 100%;
+  // max-width: max-content;
   border: 1px solid  $white-color !important;
   color:  $white-color !important;
   overflow: hidden;
@@ -101,11 +104,12 @@ body {
       &::after {
         content: "";
         position: absolute;
+        inset: -50%;
         width: 500%;
         height: 500%;
         top: -200%;
         left: -200%;
-        background: conic-gradient(from 0deg, transparent 45%, white 50%, transparent 55%);
+        background: conic-gradient(from 90deg, transparent 45%, white 50%, transparent 55%);
         z-index: 1;
         border-radius: inherit;
         animation: rotate-border 3s linear infinite;
@@ -125,7 +129,7 @@ body {
 
  
 .btn-hack::after {
-background: conic-gradient(from 0deg, transparent 45%, $lowActive-color 50%, transparent 55%); // Change rotating glow color
+background: conic-gradient(from 90deg, transparent 45%, $lowActive-color 50%, transparent 55%); // Change rotating glow color
     }
 
     // color: #00ffee !important; // Optional: Change text color
@@ -143,3 +147,29 @@ background: conic-gradient(from 0deg, transparent 45%, $lowActive-color 50%, tra
     transform: rotate(360deg);
   }
 }
+
+  /*****?  Start  Scrollbar  Section  *****/
+/*todo width  */
+::-webkit-scrollbar{
+    width: .6rem;
+  
+}
+
+/*todo track  */
+::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+/*todo handle */
+::-webkit-scrollbar-thumb{
+    background: $active-color;
+    border-radius: 50px;
+    // transition: all  1.5s ease-in-out !important ;
+  }
+  
+  /*todo Handle on hover  */
+  ::-webkit-scrollbar-thumb:hover{
+    background: $green-color;
+  
+}
+    /*****!  End Scrollbar Section  *****/

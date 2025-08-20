@@ -21,7 +21,7 @@ const displayedItems = isSeeMoreVisible
   ? data.slice(0, visibleCount )
   : data.slice(0, visibleCount);
 
-return <div className="container my-5 ">
+return <div className="container  ">
 <Headline headingTwo="Project's" para="Recents to Old" />
 
 <div className="row g-5 py-5   justify-content-center">
@@ -75,6 +75,7 @@ setHovered(false);
     }
 const {id,title,description,image,liveDemo,details} = crut;
 
+const shortDesc = description.slice(0, 75);
 
     return <>
     <motion.div 
@@ -89,7 +90,7 @@ const {id,title,description,image,liveDemo,details} = crut;
   <img src={imageMap[image]} className="card-img-top mx-auto rounded-4" alt="..."/>
   <div className="card-body">
     <h5 className="card-title fw-bold ">{title}</h5>
-    <p className="card-text">{description}</p>
+    <p className="card-text">{shortDesc + "..."}</p>
     <div className="d-flex justify-content-between flex-sm-column  flex-md-row align-items-sm-center ">
         <a href=" " className="btn activeColor position-relative projectAnchor"   >
              <span className={`${aniClass} projectLinkIcon`}><FaExternalLinkAlt  /></  span>

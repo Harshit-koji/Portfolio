@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { SBtn } from '../Reusable comp/SBtn';
 import "../../Style/contact.scss";
 import { viewVariantXM, viewVariantXP } from '../Reusable comp/Variant';
+import { Headline } from '../Reusable comp/Headline';
 
 export const ContactSection = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -25,7 +26,7 @@ export const ContactSection = () => {
 
     return (
         <>
-            <section className="min-vh-100 d-flex align-items-center position-relative overflow-hidden">
+            <section className=" d-flex align-items-center position-relative overflow-hidden ">
                 <div className="contact-section"></div>
                 <div className="container mb-3 position-relative">
                     {showAlert && (
@@ -36,11 +37,12 @@ export const ContactSection = () => {
                     )}
 
                     <div className="text-center mb-5">
-                        <h2 className="display-4 fw-bold text-white mb-3">Get In Touch</h2>
-                        <p className="lead text-light">Ready to work together? Let's create something amazing.</p>
+                        {/* <h2 className="display-4 fw-bold text-white mb-3"></h2>
+                        <p className="lead text-light">.</p> */}
+                        <Headline headingTwo="Get In Touch" para="Ready to work together? Let's create something amazing" />
                     </div>
 
-                    <div className="row g-4 ">
+                    <div className="row g-4  ">
                         <motion.div
                          variants={viewVariantXM}
           initial="hidden"
@@ -105,9 +107,9 @@ export const ContactSection = () => {
           viewport={{ amount: 0.5}}
                         className="col-lg-6 ">
                             <form onSubmit={handleSubmit} 
-                            name="contact v1" method="post" data-netlify="true"  className="p-4 rounded-4 card skillCardBg bgMainBlue">
+                            name="contact v1" method="post" data-netlify="true"  className="p-4 rounded-4 card skillCardBg bgMainBlue " >
                                 <input type="hidden" name='form-name' value="contact v1" />
-                                <h3 className="h4 text-white mb-4">Send Message</h3>
+                                <h3 className="h4 text-white mb-4 text-center">Send Message</h3>
 
                                 <div className="mb-3">
                                     <label className="form-label text-white">Name</label>
@@ -124,8 +126,8 @@ export const ContactSection = () => {
                                     <textarea name="message" className="form-control" rows="5" placeholder="Your message" value={formData.message} onChange={handleChange} required />
                                 </div>
 
-                                {/* <SBtn text='Send Message' /> */}
-                                <button id="contact-btn" type="submit" className="btn btn-lg w-100 text-white fw-bold">Send Message</button>
+                                <SBtn text='Send Message ' className="align-self-end  w-100 text-center"/>
+                                {/* <button id="contact-btn" type="submit" className="btn btn-lg w-100 text-white fw-bold">Send Message</button> */}
 
                             </form>
                         </motion.div>

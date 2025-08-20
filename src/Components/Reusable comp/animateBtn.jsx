@@ -2,9 +2,13 @@ import { FaArrowRight } from "react-icons/fa";
 import btnBg from "../../assets/images/btg-bg.svg";
 import "../../Style/animateBtn.scss";
 
-export const ABtn = ({ text, onClick }) => {
+export const ABtn = ({ text, onClick, ref, selected, id }) => {
+//    console.log(show);
+//    console.log(id);
+   
+   
     return (
-        <button className="button" onClick={onClick}>
+        <button className={`${selected ? "selected" : ""} button`} ref ={ref} onClick={onClick}>
             <div className="button-box">
                 <span className="button-elem">
                     <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">

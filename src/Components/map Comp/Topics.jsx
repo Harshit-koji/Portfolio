@@ -5,7 +5,7 @@ import { BiWrench } from "react-icons/bi";
 import { ABtn } from "../Reusable comp/animateBtn";
 
 
-export const Topics = ({ curt, handleShowContent }) => {
+export const Topics = ({ curt, handleShowContent, ref , selected }) => {
 
     const icons = {
         code: <IoIosCode />,
@@ -17,6 +17,12 @@ export const Topics = ({ curt, handleShowContent }) => {
     const { id, title, description, icon } = curt;
 
 
+// console.log(
+// "this " + id
+// );
+// console.log(
+// "this state " + show
+// );
 
 
 
@@ -29,7 +35,7 @@ export const Topics = ({ curt, handleShowContent }) => {
                     <p className="fs-4 fw-bold mb-0">{title}</p>
                     <p>{description} </p>
                 </div>
-                <ABtn onClick={() => handleShowContent(id)} text="Show" />
+                <ABtn ref={ref} onClick={() => handleShowContent(id)} text="Show"  selected={selected}  />
 
             </div>
         </div>

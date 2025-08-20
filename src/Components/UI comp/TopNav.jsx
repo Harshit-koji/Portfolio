@@ -113,7 +113,7 @@ export const TopNav = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-90} // adjust if you use a fixed navbar
+            offset={-120} // adjust if you use a fixed navbar
             duration={500}
             className='nav-link'
           >Contact </Link></li>

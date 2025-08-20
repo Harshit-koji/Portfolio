@@ -100,11 +100,16 @@ const Certificate = ()=>{
                 graduate.map((curt)=>{
 
                  return   <li key={curt.id} className="col-12 col-md-4  ">
- <div >
+ <motion.div
+  initial={{opacity: 0, y: 150}}
+    whileInView={{opacity: 1, y: 0 }}
+    transition={{duration: 0.5 , ease : "linear"}}
+    exit={{opacity: 0, y: -50 }}
+ >
             <div className="card projectCardBg w-75  mx-auto   " style={{minHeight: "10rem"}}>
 
             </div>
-        </div>
+        </motion.div>
                     </li>
                 })
             }
