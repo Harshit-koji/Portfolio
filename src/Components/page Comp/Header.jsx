@@ -15,7 +15,7 @@ export const Header = () => {
       <header className="container-fluid px-0 ">
         <TopNav />
       <Element name="home">
-          <section className="my-5 py-5 ">
+          <section className="mt-lg-5 pt-lg-5">
           <Hero />
         </section>
       </Element>

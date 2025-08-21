@@ -3,8 +3,8 @@
 .button {
   display: block;
   position: relative;
-  width: 56px;
-  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
   margin: 0;
   overflow: hidden;
   outline: none;
@@ -75,9 +75,12 @@
   display: block;
   width: 20px;
   height: 20px;
-  margin: 23px 18px 0 18px;
+  margin: 20px 15px 0 18px;
   transform: rotate(180deg);
   fill: #f0eeef;
+ display: flex !important;
+ justify-content: center !important;
+ align-items: center   !important;
 }
 
 .button:hover .button-box,

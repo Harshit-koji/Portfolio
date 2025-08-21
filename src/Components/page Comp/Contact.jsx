@@ -26,7 +26,7 @@ export const ContactSection = () => {
 
     return (
         <>
-            <section className=" d-flex align-items-center position-relative overflow-hidden ">
+            <section className="  d-flex align-items-center position-relative overflow-hidden ">
                 <div className="contact-section"></div>
                 <div className="container mb-3 position-relative">
                     {showAlert && (
@@ -134,8 +134,8 @@ export const ContactSection = () => {
                     </div>
                 </div>
             </section>
-            <div className="text-center text-light small copyright-div">
-                <div className="copyright-text">  © {new Date().getFullYear()} Priyanshu. All rights reserved.</div>
+            <div className=" container text-center text-light small copyright-div">
+                <div className="copyright-text">  © {new Date().getFullYear()} Harshit. All rights reserved.</div>
             </div>
         </>
     );

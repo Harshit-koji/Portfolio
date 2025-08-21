@@ -52,7 +52,7 @@ export const TopNav = () => {
 
 
     return (
-        <nav id="navbar" className="navbar navbar-expand-lg fixed-top">
+        <nav id="navbar" className=" container navbar navbar-expand-lg fixed-top">
             <div className="container px-4 d-flex align-items-center justify-content-between">
                 <a className="navbar-brand filterShadow  me-0" href="#">
                     <img className="img-fluid  " src={letter} alt="Logo" />
@@ -86,7 +86,7 @@ export const TopNav = () => {
             to="skill"
             spy={true}
             smooth={true}
-            offset={-40} // adjust if you use a fixed navbar
+            offset={-30} // adjust if you use a fixed navbar
             duration={500}
             className='nav-link'
           >Skills </Link></li>
@@ -95,7 +95,7 @@ export const TopNav = () => {
             to="education"
             spy={true}
             smooth={true}
-            offset={-50} // adjust if you use a fixed navbar
+            offset={-60} // adjust if you use a fixed navbar
             duration={500}
             className='nav-link'
           >Education </Link></li>

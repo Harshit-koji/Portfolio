@@ -35,3 +35,10 @@ transform: translate(7px, 4px);
 .fixedWidth{
 max-width: 50%;
 }
+
+@media screen and (max-width: 720px ) {
+    .fixedWidth{
+    max-width: 75%;
+    }
+    
+}

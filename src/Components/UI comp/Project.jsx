@@ -24,7 +24,7 @@ const displayedItems = isSeeMoreVisible
 return <div className="container  ">
 <Headline headingTwo="Project's" para="Recents to Old" />
 
-<div className="row g-5 py-5   justify-content-center">
+<div className="row gy-4 py-5 justify-content-center">
 {
     displayedItems.map((crut)=>{
 

@@ -10,19 +10,19 @@ export const MainInfo = () => {
     return (
         <>
         <Element name="skill">
-            <section className="my-5 py-5  ">
+            <section className="mt-5 pt-5   ">
                 <Skill />
             </section>
         </Element>
 
         <Element name="education">
-            <section className="my-5 py-5">
+            <section className="mb-5 pt-2 ">
                 <Education />
             </section>
         </Element>
 
         <Element name="project">
-            <section className="my-5 py-5 ">
+            <section className=" my-5 pt-4">
                 <Project /> 
             </section>
         </Element>

@@ -90,7 +90,7 @@ export const Hero = () => {
               <SBtn text="Download CV" />
             </div>
             <div>
-              <div className="d-flex gap-3 social-icons">
+              <div className="d-flex flex-row gap-3 social-icons">
                 <a href="" className="text-white text-decoration-none">
                   <div className="p-1">
                     <FaGithub />
