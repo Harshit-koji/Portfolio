@@ -3,20 +3,20 @@
 [
   {
     "id": 1,
-    "title": "B.Tech Information Technology",
-    "source": "Oriental College Of Technology",
+    "title": "Bachler Of Arts",
+    "source": "School of Open Learning",
     "year": "2020 - 2024"
   },
   {
     "id": 2,
     "title": "Senior Secondary School",
-    "source": "SJL School, Sohagpur",
+    "source": "Aurbindo Public School, Budh Vihar",
     "year": "2018 - 2020"
   },
   {
     "id": 3,
     "title": "Secondary School",
-    "source": "Model School, Sohagpur",
+    "source": "Aurbindo Public School, Budh Vihar",
     "year": "2016 - 2018"
   }
 ]

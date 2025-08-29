@@ -1,24 +1,45 @@
 import { FaArrowRight } from "react-icons/fa";
 
-import hero from "../../assets/images/hero.jpg";
+export const SBtn = ({
+  text,
+  modal,
+  page,
+  onClick,
+  red,
+  className, color,
+  type , // can be "button", "submit", or "reset"
+}) => {
+  const isFormButton =["submit", "reset" , "button"].includes(type);
 
-
-
-
-export const SBtn = ({ text, modal, page, onClick , className}) => {
   return (
     <>
-      <a className={`CommonBtn ${className}  `} data-bs-toggle={modal} data-bs-target={page} onClick={onClick}>
-        <div className="wrappers">
-          <span className="shine-text">{text}</span>
-          <div className="btn-hack"></div>
-          {/* <img src={btnBg} className="btn-bg" alt="bg" /> */}
-        </div>
-      </a>
-   
-
+      {isFormButton ? (
+        <button
+          type={type}
+          className={`CommonBtn ${className} ${red ? "selectedGreen" : ""}`}
+          data-bs-toggle={modal}
+          data-bs-target={page}
+          onClick={onClick}
+        >
+          <div className="wrappers">
+            <span className="shine-text">{text}</span>
+            <div className="btn-hack"></div>
+          </div>
+        </button>
+      ) : (
+        <a
+          
+          className={`CommonBtn ${className} ${red ? "selectedRed" : ""}`}
+          data-bs-toggle={modal}
+          data-bs-target={page}
+          onClick={onClick}
+        >
+          <div className="wrappers">
+            <span className="shine-text">{text}</span>
+            <div className="btn-hack"></div>
+          </div>
+        </a>
+      )}
     </>
   );
 };
-
-

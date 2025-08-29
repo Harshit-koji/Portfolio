@@ -56,10 +56,10 @@
 
 }
 .button:focus:after {
-  border-color: $pink-color;
+  border-color: $green-color;
 }
 .selected::before{
-  border-color: $pink-color !important;
+  border-color: $green-color !important;
   // border-color: black !important;
 
 }
@@ -75,7 +75,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  margin: 20px 15px 0 18px;
+  margin: 20px 14px 0 18px;
   transform: rotate(180deg);
   fill: #f0eeef;
  display: flex !important;
@@ -86,9 +86,25 @@
 .button:hover .button-box,
 .button:focus .button-box {
   transition: 0.4s;
-  transform: translateX(-56px);
+  transform: translateX(-53px);
 }
 
+@media (max-width: 1200px) {
+  .button:hover .button-box,
+  .button:focus .button-box {
+ 
+    transform: translateX(-47px);
+  }
+
+}
+@media (max-width: 766px) {
+  .button:hover .button-box,
+  .button:focus .button-box {
+ 
+    transform: translateX(-53px);
+  }
+
+}
 @media (max-width: 475px) {
   .bg-skillIcon {
     display: none;

@@ -21,6 +21,7 @@ export const App = () => {
     <>
       {isLoading && <Preloader />}
       <Header />
+     
       <MainInfo />
       <Element name="contact">
       <ContactSection />

@@ -32,7 +32,7 @@ export const Topics = ({ curt, handleShowContent, ref , selected }) => {
             <div className="d-flex gap-5 align-items-center">
 
                 <div className="topics-skills">
-                    <p className="fs-4 fw-bold mb-0">{title}</p>
+                    <p className="fs-4 fw-bold mb-0 pinkColor">{title}</p>
                     <p>{description} </p>
                 </div>
                 <ABtn ref={ref} onClick={() => handleShowContent(id)} text="Show"  selected={selected}  />

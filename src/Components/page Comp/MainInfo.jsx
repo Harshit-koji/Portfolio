@@ -11,6 +11,7 @@ export const MainInfo = () => {
         <>
         <Element name="skill">
             <section className="mt-5 pt-5   ">
+             <hr />
                 <Skill />
             </section>
         </Element>

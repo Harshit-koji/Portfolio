@@ -1,8 +1,13 @@
 import topic from "../../services/contents/skillTopic.json";
 import { easeInOut, motion } from "motion/react"
 import { Topics } from "../map Comp/Topics";
+import { ImHtmlFive2 } from "react-icons/im";
 import {
-    SiReact, SiTailwindcss, SiNodedotjs, SiMongodb, SiGit, SiGithub, SiVercel, SiFigma, SiPostman
+    SiReact, SiTailwindcss, SiNodedotjs, SiMongodb, SiGit, SiGithub, SiVercel, SiFigma, SiPostman,
+    SiCss3,
+    SiNetlify,
+    SiSass,
+    SiBootstrap
 } from "react-icons/si";
 
 import { BsCodeSlash, BsFiletypeJs, BsDatabase, BsArrowRightSquare } from "react-icons/bs"; // Bootstrap Icons
@@ -12,6 +17,7 @@ import "../../Style/skill.scss"
 import { useEffect, useRef, useState } from "react";
 import { Headline } from "../Reusable comp/Headline";
 import { viewVariantXM, viewVariantXP } from "../Reusable comp/Variant";
+import { RiOpenaiFill } from "react-icons/ri";
 
 export const Skill = () => {
     const [show, setShow] = useState("1");
@@ -23,11 +29,12 @@ const  num = id ;
 return num
     }
     const buttonRefs = useRef([]);
-    
+    const firstRender = useRef(true);
   // On mount or whenever focusedIndex changes → set focus
   useEffect(() => {
+   
     if (buttonRefs.current[show]) {
-      buttonRefs.current[show].focus();
+      buttonRefs.current[show].focus({ preventScroll: true });
     }
   }, [show]);
     const contentIcons = {
@@ -42,13 +49,21 @@ return num
         "SiPostman": <SiPostman />,
         "code-slash": <BsCodeSlash />,
         "filetype-js": <BsFiletypeJs />,
-        "database": <BsDatabase />
+        "database": <BsDatabase />,
+        "html": <ImHtmlFive2 />,
+        "css": <SiCss3 />,
+        "bootstrap": <SiBootstrap />,
+        "gpt":<RiOpenaiFill />,
+        "sass": <SiSass />,
+        "netlify":<SiNetlify /> ,
+
+
     };
 
     return (
         <div className="container my-5 overflow-hidden">
             <Headline headingTwo="Skills" para="My Technical Skills" />
-            <div className="row gy-5 skill-row my-5  ">
+            <div className="row gy-5 skill-row pt-4 mb-5 ">
                 <motion.div
                     variants={viewVariantXM}
                     initial="hidden"
@@ -95,7 +110,7 @@ return num
                                                 key={id} className="mb-3 rangeBorder">
                                                 <div className="d-flex justify-content-between  px-3">
                                                     <p className="fs-3 bg-skillIcon">{contentIcons[icon]}</p>
-                                                    <p className="fw-bold fs-4 activeColor">{label}</p>
+                                                    <p className="fw-bold fs-4 activeColor ">{label}</p>
                                                 </div>
 
                                             </motion.li>

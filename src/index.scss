@@ -29,7 +29,7 @@ body {
   filter: drop-shadow(0 0 .5rem #fbcfe8);
 }
 .filterShadow{
-  filter: drop-shadow(0 0 .5rem #555);
+  filter: drop-shadow(0 0 .5rem #b83a1a);
 
 }
 .minH{
@@ -37,7 +37,8 @@ body {
 }
 
 .pinkColor{
-    color: $green-color !important;
+  color: $pink-color !important;
+  color: $green-color !important;
 }
 
 .bg-skillIcon {
@@ -56,6 +57,10 @@ body {
 }
 .cursor-pointer{
   cursor: pointer;
+}
+
+.icons-center{
+  margin: 0 auto !important;
 }
 
 .CommonBtn {
@@ -147,6 +152,31 @@ background: conic-gradient(from 90deg, transparent 45%, $lowActive-color 50%, tr
     transform: rotate(360deg);
   }
 }
+
+
+
+.selectedRed {
+
+
+   border-color: $red-color !important; // Change outer border 
+    // padding: .5rem .7rem;
+    transform: scale(1.04); // Slight zoom-in
+    // transform: translateY(-10% ); 
+ background: linear-gradient(126deg, $red-color 5%, rgb(0, 0, 0) 40%, $red-color 100%);
+ 
+ 
+ 
+}
+.selectedGreen{
+  
+  border-color: $green-color !important; // Change outer border 
+   // padding: .5rem .7rem;
+   transform: scale(1.04); // Slight zoom-in
+   // transform: translateY(-10% ); 
+  background: linear-gradient(126deg, $green-color 5%, rgb(0, 0, 0) 40%, $green-color 100%);
+
+}
+
 
   /*****?  Start  Scrollbar  Section  *****/
 /*todo width  */

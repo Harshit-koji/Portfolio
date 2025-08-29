@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import avatar from "../../assets/images/profile-avatar.png";
+import avatar from "../../assets/images/me.png";
 import { SBtn } from "../Reusable comp/SBtn";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion"; // Changed from 'motion/react' to 'framer-motion'
 import { viewVariantXM, viewVariantXP } from "../Reusable comp/Variant";
+import { Modal } from "../Reusable comp/Modal";
 
 export const Hero = () => {
   const phrases = ["Frontend Developer", "React Developer", "UI Designer"];
@@ -70,26 +71,27 @@ export const Hero = () => {
         }
       `}</style>
       <div className="container hero-section my-5">
-        <div className="row align-items-center overflow-hidden">
+        <div className="row align-items-center  ">
           <motion.div
             variants={viewVariantXM}
             initial="hidden"
             whileInView="show"
             exit="exit"
             viewport={{ amount: 0.5 }} // Change to "some" or remove entirely
-            className="order-last order-md-first col-12 col-md-6 d-flex flex-column align-items-start gap-3 p-5"
+            className="order-last order-md-first col-12 col-md-6 d-flex flex-column align-items-end gap-3 p-5   "
           >
-            <h1 className="fw-bolder display-4">Hi, I'm <span className="fw-bold text-warning">Harshit</span></h1>
+            <h1 className=" display-4 display-sm ">Hi, I'm <span className="fw-bold text-warning fst-italic  ">Harshit</span></h1>
             <h4 className="mt-2">
               A&nbsp;
               <span className="typewriter-text">{text}</span>
               <span className="cursor">|</span>
             </h4>
             <div className="d-flex gap-4 mt-3">
-              <SBtn text="About Me" />
+              <SBtn text="About Me"  modal="modal" page="#example2"/>
+              <Modal hero={avatar} id="example2" lable="About Me" para="Front-end Developer with over 10 month of experience creating interactive responsive websites, Graphics & Product Designing for High-profile clients and Big brands. A passionate Coder with an eye for details and a focus to produce quality work." />
               <SBtn text="Download CV" />
             </div>
-            <div>
+            <div className="">
               <div className="d-flex flex-row gap-3 social-icons">
                 <a href="" className="text-white text-decoration-none">
                   <div className="p-1">
@@ -114,17 +116,19 @@ export const Hero = () => {
               </div>
             </div>
           </motion.div>
-          <div className="order-first order-md-last col-12 col-md-6 d-flex justify-content-center">
-            <motion.img
+          <div className="order-first order-md-last col-12 col-md-6 d-flex justify-content-center p-4 ">
+         
+              <motion.img
               variants={viewVariantXP}
               initial="hidden"
               whileInView="show"
               exit="exit"
               viewport={{ amount: 0.5 }} // Change to "some" or remove entirely
-              className="img-fluid rounded-pill dropShadow w-75"
+              className="img-fluid card  skillCardBg bgMainBlue dropShadow w-50 rounded-pill"
               src={avatar}
               alt="Profile Avatar"
             />
+        
           </div>
         </div>
       </div>

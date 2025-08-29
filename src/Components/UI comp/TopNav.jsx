@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import {Link} from "react-scroll";
-import letter from "../../assets/images/letter.png"
+import letter from "../../assets/images/alphabetG.png"
 export const TopNav = () => {
     const [darkMode, setDarkMode] = useState(false);
 
@@ -52,7 +52,7 @@ export const TopNav = () => {
 
 
     return (
-        <nav id="navbar" className=" container navbar navbar-expand-lg fixed-top">
+        <nav id="navbar" className="  navbar navbar-expand-lg fixed-top">
             <div className="container px-4 d-flex align-items-center justify-content-between">
                 <a className="navbar-brand filterShadow  me-0" href="#">
                     <img className="img-fluid  " src={letter} alt="Logo" />
@@ -77,7 +77,7 @@ export const TopNav = () => {
             spy={true}
             smooth={true}
             // offset={-70} // adjust if you use a fixed navbar
-            duration={500}
+            duration={300}
             className='nav-link'
           >Home </Link></li>
                  
@@ -87,7 +87,7 @@ export const TopNav = () => {
             spy={true}
             smooth={true}
             offset={-30} // adjust if you use a fixed navbar
-            duration={500}
+            duration={300}
             className='nav-link'
           >Skills </Link></li>
                         <li className="nav-item">      <Link
@@ -96,7 +96,7 @@ export const TopNav = () => {
             spy={true}
             smooth={true}
             offset={-60} // adjust if you use a fixed navbar
-            duration={500}
+            duration={300}
             className='nav-link'
           >Education </Link></li>
                         <li className="nav-item">      <Link
@@ -105,7 +105,7 @@ export const TopNav = () => {
             spy={true}
             smooth={true}
             offset={-98} // adjust if you use a fixed navbar
-            duration={500}
+            duration={300}
             className='nav-link'
           >Projects </Link></li>
                         <li className="nav-item">      <Link
@@ -114,7 +114,7 @@ export const TopNav = () => {
             spy={true}
             smooth={true}
             offset={-120} // adjust if you use a fixed navbar
-            duration={500}
+            duration={300}
             className='nav-link'
           >Contact </Link></li>
                    
